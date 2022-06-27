@@ -4,10 +4,8 @@ const router = express.Router();
 const pool = require('../database');
 const { isLoggedIn } = require('../lib/auth');
 
-// router.get('/usuarios', isLoggedIn, (req, res) => {
-//     res.render('usuarios/list-all');
-//   });
- 
+// HAF: este codigo no funciona
+// let usuarios = require('../../models/usuarios'); 
 
 router.get('/create', (req, res) => {
     res.render('usuarios/create');
@@ -16,7 +14,6 @@ router.get('/create', (req, res) => {
 router.post('/create', async (req, res) => {
     backURL=req.header('Referer') || '/';
     console.log({ backURL });
-    // do your thang
     
     console.log('Usuarios.Create:');
     console.log(req.body);
@@ -42,6 +39,11 @@ router.post('/create', async (req, res) => {
 });
 
 router.get('/',  async (req, res) => {
+    // HAF: lo ensenado en clase no funciona, se va a tener que buscar alternativas
+    // usuarios.findAll({}).then((users) => {
+    //     res.render('usuarios/list-all', { users });
+    // })    
+
     const usuarios = await pool.query('SELECT * FROM usuarios');
     res.render('usuarios/list-all', { usuarios });
 });

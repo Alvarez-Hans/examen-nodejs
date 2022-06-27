@@ -4,6 +4,8 @@
 
 Este proyecto es un mantenedor de usuarios de un sistema hipotetico. 
 
+Se ha hecho en un tiempo record leyendo y obteniendo el conocimiento de la red.
+
 ### Tecnologia
 1. NodeJs
 1. Express
