@@ -1,0 +1,46 @@
+{{!-- <center>
+    <h1>Ventana Listar</h1>
+</center> --}}
+<br> 
+<div class="container">
+    <div class="row">
+        <h3>Listado de Productos</h3>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-primary" href="/usuarios/create">
+                Nuevo
+            </a>
+            <a class="btn btn-warning" href="/chat">
+                Ir al Chat
+            </a>
+            <a class="btn btn-danger" href="/logout">
+                Cerrar Sesion
+            </a>
+        </div>
+    </div>
+
+    <table class="table table-striped mt-2">
+        <thead class="table-primary">
+            <tr>
+                <th class="col">Id</th>
+                <th class="col">Nombre</th>
+                <th class="col">Correo</th>
+                <th class="col" colspan="2">Operacion</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            {{#each usuarios}}
+            {{!-- data --}}
+            <tr>
+                <th scope="row">{{id}}</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td><a href="/usuarios/update/{{id}}">Modificar</a></td>
+                <td><a href="/usuarios/delete/{{id}}">Eliminar</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,17 @@
+- ¿Qué hice bien?
+HAF: Aprender de varios videos, manuales y paginas los conocimientos faltantes del curso de NodeJs.
+
+- ¿En qué necesito ayuda?
+HAF: En una clase detallada de como se hace un "sistema" de administracion pequeño, es decir, un aplicativo con varios modulos (CRUD, Sequiridad, Mostrar grandes de informacion de forma optima).
+
+- ¿Sobre qué quiero saber más?
+HAF: Los stilos de bootstrap, nodejs y express.
+
+- ¿Qué aprendí en esta evaluación?
+HAF: nodejs y express.
+
+- ¿Qué debo mejorar?
+HAF: a ser mas creativo con las paginas web, estoy muy enfocado en el backend.
+
+- ¿Qué acciones realizaré para mejorar?
+HAF: Hacer mas aplicativos basados en nodejs y express. Quizas me enfoque a NestJs.
